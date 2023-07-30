@@ -32,6 +32,11 @@ Technologies Used
 
 Frontend: React.js
 
+
+<img width="287" alt="k1" src="https://github.com/pavan-s-5/KANON-client-react/assets/131233727/776654e0-91ef-407b-b844-54a597640f7e">
+<img width="508" alt="k2" src="https://github.com/pavan-s-5/KANON-client-react/assets/131233727/9266a498-d9a6-40ee-8f56-2ba1df7a4258">
+<img width="714" alt="16321" src="https://github.com/pavan-s-5/KANON-client-react/assets/131233727/dba1f1d9-57f5-4f99-8d13-99fde4eb80c8">
+
 Backend: Strapi (Headless CMS)
 
 Payment Integration: Stripe
