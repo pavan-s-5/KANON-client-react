@@ -8,7 +8,7 @@ import {
   BsFillArrowRightCircleFill,
 } from "react-icons/bs";
 
-const About = ({ data }) => {
+const About = ({ data, sellImage }) => {
   const [slide, setSlide] = useState(0);
 
   const nextSlide = () => {
@@ -76,14 +76,13 @@ const About = ({ data }) => {
         </div>
 
         <div className="about-banner-3-bottom-div">
-          <img src={img3} alt="" />
-          <img src={img3} alt="" />
-          <img src={img3} alt="" />
-          <img src={img3} alt="" />
-          <img src={img3} alt="" />
-          <img src={img3} alt="" />
-          <img src={img3} alt="" />
-          <img src={img3} alt="" />
+          {
+            sellImage.map((image, i) => {
+              return (
+                <img key={i} src={image.image} alt="" />
+              )
+            })
+          }
         </div>
       </div>
 

@@ -84,7 +84,7 @@ const AppContext = ({ children }) => {
     privacyData,
     setPrivacyData,
     pdata,
-     setPdata
+    setPdata
     }}> 
 
     {children}

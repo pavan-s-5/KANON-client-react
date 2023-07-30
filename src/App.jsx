@@ -8,7 +8,7 @@ import SingleProduct from "./components/singleProduct/SingleProduct";
 import NewsLetter from "./components/footer/newsLetter/NewsLetter";
 import AppContext from "./utils/Context";
 import About from "./components/header/about/About";
-import {slides} from './components/header/about/testimonial.json'
+import {slides, sellImage} from './components/header/about/testimonial.json'
 import ContactUs from "./components/footer/contactUsform/ContactUs";
 import PrivacyPolicy from "./components/footer/privacyPolicy/PrivacyPolicy";
 import TermsOfUse from "./components/footer/termsOfUse/TermsOfUse";
@@ -25,7 +25,7 @@ function App() {
           <Route path="/product/:id" element={<SingleProduct />} />
           <Route path="/privacypolicy/:id" element={<PrivacyPolicy />} />
           <Route path="/termsofuse/:id" element={<TermsOfUse />} />
-          <Route path="/about" element={<About data={slides}/>} />
+          <Route path="/about" element={<About data={slides} sellImage={sellImage} />} />
           <Route path="/contactus" element={<ContactUs/>} />
           <Route path="/success" element={<OrderSucess />} />
         </Routes>

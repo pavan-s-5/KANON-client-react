@@ -33,5 +33,33 @@
             "description" : "description Lorem ipsum dolor sit amet, consectetuaerat ducimus explicabo nisi aspernatur quae expedita ratione, a cum eos fugiat enim! Omnis voluptatem, veritatis expedita culpa ut provident numquam optio! Sit libero itaque nemo ex ad optio molestiae."
         }
         
+    ],
+    
+    "sellImage" : [
+        {
+            "image":"https://i.pcmag.com/imagery/roundups/018cwxjHcVMwiaDIpTnZJ8H-51..v1637092108.jpg",
+            "src":"https://picsum.photos/seed/img2/100/100"
+        },
+        {
+            "image":"https://d2ajlz7o3p8ddv.cloudfront.net/media/products/thumbnails/thumb_vxSP2Dn.jpg"
+        },
+        {
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtN7B8pDc211hdEblhw8P_LOFJymlLkSpULA&usqp=CAU"
+        },
+        {
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB7ifh0MUBdPUoqizA1CxF1oplo-4nhHG5FHOlSS02LyXbSkMO2hU6BRYtS0NcVq3mJP0&usqp=CAU"
+        },
+        {
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAZeZQcQ-HIWge6Hw3_vDTRMghyeYMgWKjFw&usqp=CAU"
+        },
+        {
+            "image":"https://detec.in/cdn/shop/collections/camera-accessories-500x500_df69878c-dddb-4742-b3f1-a1ac0135381d.jpg?v=1633501460"
+        },
+        {
+            "image":"https://5.imimg.com/data5/SELLER/Default/2022/6/GQ/GR/NP/109941501/20210203103816-praktica-falcon-8x40-piskovy-dalekohled-sync.jpeg"
+        },
+        {
+            "image":"https://main.mobile.doss.co.id/storage/uploads/2020/11/medium/Ronin-SC%20Pro%20Combo.webp"
+        }
     ]
 }
