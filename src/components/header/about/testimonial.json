@@ -1,0 +1,37 @@
+{
+    "slides" : [
+        {
+            "name":"Pruthiv Raj",
+            "src":"https://picsum.photos/seed/img1/100/100",
+            "alt":"img 1",
+            "review" : "⭐⭐⭐⭐⭐",
+            "location": "Reviewed in India 🇮🇳 on 20 July 2023",
+            "description" : "description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus fugit recusandae aliquid itaque consectetur qui? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum facere labore aspernatur consequatur tempora consequuntur architecto! Blanditiis dolores maxime, ullam quaerat ducimus explicabo nisi aspernatur quae expedita ratione, a cum eos fugiat enim! Omnis voluptatem, veritatis expedita culpa ut provident numquam optio! Sit libero itaque nemo ex ad optio molestiae."
+        },
+        {
+            "name":"Reena Raj",
+            "src":"https://picsum.photos/seed/img2/100/100",
+            "alt":"img 3",
+            "review" : "⭐⭐⭐⭐",
+            "location": "Reviewed in India 🇮🇳 on 5 March 2023",
+            "description" : "description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus fugit recusandae aliquid itaque consectetur qui? Lorem ipsum  expedita culpa ut provident numquam optio! Sit libero itaque nemo ex ad optio molestiae."
+        },
+        {
+            "name":"Meghna",
+            "src":"https://picsum.photos/seed/img3/100/100",
+            "alt":"img 3",
+            "review" : "⭐⭐⭐⭐⭐",
+            "location": "Reviewed in India 🇮🇳 on 20 Feb 2023",
+            "description" : "description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus fugit recusandae aliquid itaque consectetur qui? Lorem ipsum dolor sit amet aerat ducimus explicabo nisi aspernatur quae expedita ratione, a cum eos fugiat enim! Omnis voluptatem, veritatis expedita culpa ut provident numquam optio! Sit libero itaque nemo ex ad optio molestiae."
+        },
+        {
+            "name":"Rishab M",
+            "src":"https://picsum.photos/seed/img4/100/100",
+            "alt":"img 4",
+            "review" : "⭐⭐⭐⭐",
+            "location": "Reviewed in India 🇮🇳 on 16 Jan 2023",
+            "description" : "description Lorem ipsum dolor sit amet, consectetuaerat ducimus explicabo nisi aspernatur quae expedita ratione, a cum eos fugiat enim! Omnis voluptatem, veritatis expedita culpa ut provident numquam optio! Sit libero itaque nemo ex ad optio molestiae."
+        }
+        
+    ]
+}

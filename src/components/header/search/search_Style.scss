@@ -1,0 +1,186 @@
+@import "../../../css-config/mixins.scss";
+
+.search-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transform: translateY(100%);
+  animation: slideSearchWindow 0.3s ease forwards;
+
+  .form-field {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+    @include md {
+      padding: 20px 0;
+    }
+
+    input {
+      width: 100%;
+      max-width: 1200px;
+      height: 60px;
+      text-align: center;
+      font-size: 25px;
+      font-weight: 600;
+      color: #212121;
+      outline: none;
+      border: none;
+
+      &::placeholder {
+        opacity: 0.5;
+        font-size: 15px;
+
+        @include md {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .close-btn {
+      position: absolute;
+      font-size: 30px;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-weight: 700;
+      cursor: pointer;
+
+      @include md {
+        right: 40px;
+      }
+
+      &:hover {
+        color: #d40202;
+      }
+    }
+  }
+
+  .search-result-content {
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    height: 100%;
+
+    @include md {
+        width: 100%;
+    }
+
+    .search-results {
+      height: 100%;
+      overflow-y: auto;
+      margin: 20px 0;
+
+      @include md {
+        height: calc(100% - 160px);
+      }
+
+      .search-result-item {
+        display: flex;
+        gap: 10px;
+        padding: 10px 10px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+
+        .img-container {
+          width: 80px;
+          height: 80px;
+          flex-shrink: 0;
+          background-color: rgba(0, 0, 0, 0.1);
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+
+          @include md {
+            width: 180px;
+            height: 180px;
+          }
+        }
+
+        .product-details {
+          display: flex;
+          flex-direction: column;
+          margin-left: 20px;
+          gap: 15px;
+
+          .product-name {
+            font-size: 10px;
+
+            @include md {
+              font-size: 18px;
+            }
+          }
+
+          .product-price {
+            font-size: 15px;
+
+            @include md {
+              font-size: 23px;
+            }
+          }
+
+          .product-mrp {
+            display: flex;
+            gap: 5px;
+            font-size: 12px;
+            color: gray;
+
+            @include md {
+              font-size: 15px;
+            }
+
+            .striked-price {
+              text-decoration: line-through;
+            }
+
+            .offer {
+              color: red;
+              font-weight: 300;
+            }
+          }
+
+          .shipping {
+            display: flex;
+            align-items: center;
+            color: gray;
+
+            svg {
+              margin-right: 10px;
+              font-size: 20px;
+              color: #d08700;
+
+              @include md {
+                font-size: 20px;
+              }
+            }
+
+            @include md {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+    }
+  }
+}
+
+@keyframes slideSearchWindow {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}

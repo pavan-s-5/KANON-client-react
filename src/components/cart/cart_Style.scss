@@ -1,0 +1,179 @@
+@import "../../css-config/mixins.scss";
+
+.cart-pannel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+
+  .opacity-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .cart-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1;
+    transform: translateX(100%);
+    animation: cartSlideWindowOpen 0.3s ease forwards;
+    overflow-y: auto;
+
+    @include md {
+      width: 340px;
+    }
+
+    .cart-header {
+      position: sticky;
+      top: 0;
+      left: 0;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 20px 15px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      z-index: 99;
+
+      .heading {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        flex-grow: 1;
+        margin-bottom: 0;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        svg {
+          font-size: 25px;
+        }
+      }
+
+      .close-btn {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 30px;
+        cursor: pointer;
+        text-transform: uppercase;
+
+        &:hover {
+          color: #d30404;
+        }
+      }
+    }
+
+    .empty-cart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-top: 50px;
+      font-size: 20px;
+
+      svg {
+        opacity: 0.1;
+        font-size: 180px;
+      }
+
+      .continue-shopping {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        outline: 0;
+        border: 0;
+        height: 50px;
+        width: 180px;
+        color: white;
+        background-color: blue;
+        font-weight: 700;
+        font-size: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+
+        @include md {
+          flex-grow: unset;
+        }
+
+        &:hover {
+          background-color: darkblue;
+        }
+      }
+    }
+
+    .cart-footer {
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+      .subtotal {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 15px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+        .text {
+          margin-bottom: 0;
+          font-size: 18px;
+          font-weight: 700;
+
+          &.total {
+            color: #0000c8;
+          }
+        }
+      }
+      .button {
+        padding: 20px 15px;
+
+        .checkout-cta {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          outline: 0;
+          border: 0;
+          height: 50px;
+          width: 100%;
+          color: white;
+          background-color: blue;
+          font-weight: 700;
+          font-size: 15px;
+          border-radius: 5px;
+          cursor: pointer;
+
+          @include md {
+            flex-grow: unset;
+          }
+
+          &:hover {
+            background-color: darkblue;
+          }
+        }
+      }
+    }
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+}
+
+@keyframes cartSlideWindowOpen {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

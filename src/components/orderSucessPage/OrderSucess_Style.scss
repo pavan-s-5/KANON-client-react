@@ -1,0 +1,70 @@
+@import "../../css-config/mixins.scss";
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Lobster+Two:wght@700&display=swap");
+
+
+.success-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 80px);
+  padding: 10px;
+
+  .sub-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+
+    @include md {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        width: 70%;
+        height: 50%;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 10px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h3{
+        svg{
+            color: green;
+            font-size: 20px;
+        }
+    }
+
+    .left {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+  
+
+      img {
+        width: 35px;
+        filter: brightness(-50%);
+        @include lg {
+          width: 50px;
+        }
+      }
+
+      span {
+        color: white;
+        font-size: 25px;
+        font-family: "Lobster Two", cursive;
+        color: #03bb78;
+
+        @include lg {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+}
